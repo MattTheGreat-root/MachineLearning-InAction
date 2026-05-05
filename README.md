@@ -1,57 +1,50 @@
 # MachineLearning-InAction
 
-A personal learning repository covering machine learning, image processing with OpenCV, and natural language processing.
+A hands-on learning repository exploring core machine learning concepts, computer vision, natural language processing, and financial modeling through practical notebooks and scripts.
 
 ## Overview
 
-This repository is a collection of Jupyter notebooks and Python scripts that explore a variety of topics, from foundational algorithms to practical applications. It serves as a hands-on playground to learn and experiment with different techniques.
+This repository is a personal collection of experiments and implementations designed to bridge theory and practice. It covers foundational ML algorithms built from scratch, image processing techniques, stock market volatility prediction, character-level language modeling, and basic PyTorch workflows.
+<br/>
+Each notebook is written in a self-contained, educational style with explanations, code, and visualizations, making it suitable for reviewing concepts or using as a quick reference.
 
-## Repository Structure
+## Modules
 
-MachineLearning-InAction/
-├── Basics/ # Core ML algorithms from scratch
-│ ├── BiasVsVariance/ # Bias-variance trade-off & KNN
-│ ├── KNN-Ensemble/ # KNN ensemble with custom dataset
-│ ├── Perceptron/ # Simple Perceptron implementation
-│ └── Regularization/ # Regularization techniques (L1, L2)
-├── ImageProcessing/ # Image processing & computer vision
-│ ├── alphaChannel.ipynb # Alpha channel handling
-│ ├── blobdetection.ipynb # Blob detection
-│ ├── contrast.ipynb # Contrast adjustment
-│ ├── event.ipynb # Event-based processing
-│ ├── open&crop.ipynb # Image opening & cropping
-│ ├── sift.ipynb # Scale-Invariant Feature Transform
-│ ├── simpleOCR.ipynb # Simple Optical Character Recognition
-│ ├── skintracker.ipynb # Skin tracking
-│ ├── thresholding.ipynb # Image thresholding
-│ └── webcam.ipynb # Webcam capture & processing
-├── MarketVolatility/ # Stock volatility prediction
-│ ├── data.py # Data fetching (AAPL, 2014-2024)
-│ ├── main.py # Training script (RandomForest + GridSearchCV)
-│ ├── volatility.ipynb # Notebook version of the model
-│ └── requirements.txt # Dependencies
-├── NLP/ # Natural Language Processing
-│ └── c-rnn.ipynb # Character-level RNN
-├── Torch/ # PyTorch experiments
-│ ├── LinearRegression.ipynb # Linear Regression with PyTorch
-│ └── classifier.ipynb # Classifier model
-└── .gitignore
+### Basics
+Implements fundamental machine learning concepts from scratch to build intuition.
+- **Bias vs. Variance**: Demonstrates the bias-variance trade-off using KNN with varying k values.
+- **KNN-Ensemble**: A custom dataset and KNN ensemble implementation.
+- **Perceptron**: Simple Perceptron algorithm for binary classification.
+- **Regularization**: L1 and L2 regularization applied to linear models to control overfitting.
 
-## Usage
-Basics: Open any notebook in the Basics/ folder to see implementations of bias-variance, KNN ensembles, perceptron, and regularization.
+### ImageProcessing
+Explores image manipulation and basic computer vision tasks using OpenCV and custom logic.
+- **Alpha channel** handling and compositing.
+- **Blob detection** to identify regions of interest.
+- **Contrast adjustment** and histogram manipulation.
+- **Event-based processing** for interactive editing.
+- **Opening & cropping** images programmatically.
+- **SIFT** feature extraction and matching.
+- **Simple OCR** pipeline for digit/character recognition.
+- **Skin tracking** using color thresholds.
+- **Thresholding** techniques (global, adaptive, Otsu).
+- **Webcam capture** and real-time processing.
 
-Image Processing: Open notebooks in ImageProcessing/ to learn how to manipulate images, detect features, threshold, and perform OCR.
+### MarketVolatility
+Predicts stock market volatility using machine learning. Contains a complete pipeline:
+- Fetches historical price data (default: AAPL, 2014–2024).
+- Engineers volatility-related features.
+- Trains a Random Forest regressor with GridSearchCV for hyperparameter tuning.
+- Provides both a Python script (`main.py`) and an identical Jupyter notebook for exploratory analysis. <br/>
+Checkout the local README for more details.
 
-Market Volatility:
+### NLP
+- **c-rnn.ipynb**: Character-level recurrent neural network trained on textual data (e.g., Shakespeare). Demonstrates text generation using a simple RNN built from scratch (no deep learning frameworks aside from numpy) to understand sequence modeling.
 
-Run data.py to download stock data (default: AAPL 2014-2024).
-Run main.py to train a RandomForest regressor with GridSearchCV.
-Alternatively, open volatility.ipynb for an interactive version.
-NLP: Open c-rnn.ipynb to train a character-level RNN on a Shakespeare dataset.
+### Torch
+Introduction to PyTorch with two foundational model types.
+- **Linear Regression**: A minimal PyTorch training loop for linear regression, covering tensors, gradients, and optimization.
+- **Classifier**: A feed-forward neural network for classification, illustrating dataset loading, training/validation loops, and evaluation.
 
-Torch: Open LinearRegression.ipynb or classifier.ipynb to see basic PyTorch workflows.
-
-## Notes
+<br/>
 The repository is still under active development and may contain incomplete implementations.
-
-Some modules (e.g., MarketVolatility) include a local README with more details.
