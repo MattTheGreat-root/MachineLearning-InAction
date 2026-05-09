@@ -36,7 +36,7 @@ Predicts stock market volatility using machine learning. Contains a complete pip
 - Engineers volatility-related features.
 - Trains a Random Forest regressor with GridSearchCV for hyperparameter tuning.
 - Provides both a Python script (`main.py`) and an identical Jupyter notebook for exploratory analysis. <br/>
-Checkout the local README for more details.
+- Checkout the local README for more details.
 
 ### NLP
 - **c-rnn.ipynb**: Character-level recurrent neural network trained on textual data (e.g., Shakespeare). Demonstrates text generation using a simple RNN built from scratch (no deep learning frameworks aside from numpy) to understand sequence modeling.
@@ -47,4 +47,4 @@ Introduction to PyTorch with two foundational model types.
 - **Classifier**: A feed-forward neural network for classification, illustrating dataset loading, training/validation loops, and evaluation.
 
 <br/>
-The repository is still under active development and may contain incomplete implementations.
+This repository is still under active development and may contain incomplete implementations.
